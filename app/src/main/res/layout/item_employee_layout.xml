@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_employee_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee Id: 123"/>
+            <TextView
+                android:id="@+id/text_employee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Ram krishna"/>
+            <TextView
+                android:id="@+id/text_employee_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: 12 Years"/>
+            <TextView
+                android:id="@+id/text_employee_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary: 120000 INR"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_update_employee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit_black_24dp"/>
+                <ImageButton
+                    android:id="@+id/btn_delete"
+                    android:src="@drawable/ic_delete_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

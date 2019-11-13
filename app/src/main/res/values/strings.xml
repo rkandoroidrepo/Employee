@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="employee_id">Id:</string>
+    <string name="title_employee_name">Name:</string>
+    <string name="title_employee_age">Age:</string>
+    <string name="title_employee_salary">Salary:</string>
+    <string name="error_employee_list">Unable to load employee list</string>
+    <string name="error_employee_by_id">Unable to find details</string>
+    <string name="enter_employee_id_error">Enter Employee id</string>
+    <string name="get_all_employee">Get All Employee</string>
+    <string name="enter_employee_id">Enter Employee Id</string>
+    <string name="get_employee_id">Get Employee Id</string>
+    <string name="add_new_employee">Add New Employee</string>
+</resources>

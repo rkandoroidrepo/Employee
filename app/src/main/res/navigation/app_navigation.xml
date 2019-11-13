@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.employee.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_employee_list"
+            app:destination="@id/employeeListFragment" />
+        <action
+            android:id="@+id/action_home_to_add_new_employee"
+            app:destination="@id/addNewEmployeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeListFragment"
+        android:name="com.example.myapplication.employee.EmployeeListFragment"
+        android:label="fragment_employee_list"
+        tools:layout="@layout/fragment_employee_list" >
+        <action
+            android:id="@+id/action_employee_list_to_update_employee"
+            app:destination="@id/addNewEmployeeFragment" />
+        <argument
+            android:name="employeeId"
+            app:argType="string"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewEmployeeFragment"
+        android:name="com.example.myapplication.employee.AddUpdateEmployeeFragment"
+        android:label="fragment_add_new_employee"
+        tools:layout="@layout/fragment_add_or_update_employee" >
+        <argument
+            android:name="employee"
+            app:argType="com.example.myapplication.modal.Employee"
+            android:defaultValue="@null" />
+
+    </fragment>
+
+
+</navigation>
